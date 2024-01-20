@@ -1,0 +1,60 @@
+version: '2'
+
+services:
+  app:
+    container_name: laravel
+    image: 'giovanegurgel/laravel_swoole'
+    ports:
+      - '8009:8000'
+      - '5173:5173'
+    environment:
+      - TZ='America/Fortaleza'
+      - LARAVEL_SKIP_DATABASE=yes
+    volumes:
+      - './project:/app'
+    networks:
+      - netlara
+
+  mailpit:
+    container_name: mailpit
+    image: 'axllent/mailpit:latest'
+    ports:
+      - '1025:1025'
+      - '8025:8025'
+    environment:
+      - TZ='America/Fortaleza'
+    networks:
+      - netlara
+  # mysql:
+  #   container_name: mysql
+  #   image: mysql:8.0-debian
+  #   restart: unless-stopped
+  #   volumes:
+  #     - .devcontainer/mysql:/var/lib/mysql:delegated
+  #   ports:
+  #     - 3306:3306
+  #   environment:
+  #     - TZ='America/Fortaleza'
+  #     - MYSQL_DATABASE=aula_mysql
+  #     - MYSQL_USER=aula_mysql
+  #     - MYSQL_PASSWORD=aula_mysql
+  #     - MYSQL_ROOT_PASSWORD=aula_mysql
+  #   networks:
+  #     - netlara
+
+  # phpmyadmin:
+  #   container_name: phpmyadmin
+  #   image: docker.io/bitnami/phpmyadmin:5
+  #   ports:
+  #     - 8010:8080
+  #   environment:
+  #     - TZ='America/Fortaleza'
+  #     - DATABASE_HOST=mysql
+  #     - DATABASE_USER=root
+  #     - DATABASE_PASSWORD=aula_mysql
+  #   networks:
+  #     - netlara
+
+networks:
+  netlara:
+    driver: bridge
