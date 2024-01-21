@@ -63,6 +63,5 @@
             }
         }
     },
-    "initializeCommand": "docker container rm laravel",
     "remoteUser": "bitnami"
 }

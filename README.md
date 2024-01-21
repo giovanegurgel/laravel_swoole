@@ -105,6 +105,22 @@ code .
 > **ATENÇÃO: Para criar `NOVOS PROJETOS`, altere apenas o nome do lado esquerdo na diretiva `volumes` do arquivo `docker-compose.yml`. O Docker vai preparar um novo projeto Laravel nessa nova pasta sem interferir nas pastas dos outros projetos. O `/app` é o diretório padrão usado dentro do container, logo, não precisa ser modificado.**
 
 > <picture>
+>   <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Mqxx/GitHub-Markdown/main/blockquotes/badge/light-theme/warning.svg">
+>   <img alt="Warning" src="https://raw.githubusercontent.com/Mqxx/GitHub-Markdown/main/blockquotes/badge/dark-theme/warning.svg">
+> </picture><br>
+>
+> **ATENÇÃO: Se houver algum conflito com nomes de Contêiners, utilize os seguintes comandos Docker para solucionar o problema. Também pode utilizar as interfaces gráficas `Docker Desktop` ou `Portainer`.**
+
+```bash
+docker ps
+
+docker ps -a
+
+docker container ls -a
+
+docker container rm NOMECONTAINER
+```
+> <picture>
 >   <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Mqxx/GitHub-Markdown/main/blockquotes/badge/light-theme/info.svg">
 >   <img alt="Info" src="https://raw.githubusercontent.com/Mqxx/GitHub-Markdown/main/blockquotes/badge/dark-theme/info.svg">
 > </picture><br>
