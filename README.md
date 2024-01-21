@@ -41,6 +41,8 @@
 
 📥 Crie um novo repositório baseado neste `template`.
 
+🔗 Crie sua conta [`Docker Hub`](https://www.docker.com/products/docker-hub/).
+
 🐧 **`Utilize alguma distribuição LINUX.`** 🐧
 
 🐳 Verifique se instalou o [`Docker`](https://docs.docker.com/get-docker/).
@@ -61,23 +63,25 @@
 
 # 🟢 Começando
 
-1. Clone o seu repositório (copie a URL HTTPS)
+1. Entre na sua conta [`Docker Hub`](https://www.docker.com/products/docker-hub/).
+
+2. Clone o seu repositório (copie a URL HTTPS)
 
 ```bash
 git clone url_https_do_seu_repositório
 ```
 
-2. Abrir o projeto no `VSCode`. [instale a extensão Dev Containers](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers)
+3. Abrir o projeto no `VSCode`. [instale a extensão Dev Containers](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers)
 
 ```bash
 cd pasta_do_projeto
 code .
 ```
-3. Click no botão **`Reabrir no Contêiner`** que aparece no canto inferior direito. O VSCode vai criar o contêiner para executar os arquivos do projeto que também serão gerados na pasta `project` ou outra indicada no arquivo `docker-compose.yml`.
+4. Click no botão **`Reabrir no Contêiner`** que aparece no canto inferior direito. O VSCode vai criar o contêiner para executar os arquivos do projeto que também serão gerados na pasta `project` ou outra indicada no arquivo `docker-compose.yml`.
 
 ![Imagem da janela de reabrir Contêiner](https://raw.githubusercontent.com/giovanegurgel/devcont_laravel/main/img/reabrir_container.png)
 
-4. Algumas extensões serão instaladas automaticamente. Pode instalar outras normalmente ou obter as extensões já ativadas no seu VSCode. Para isso vá na aba de extensões, depois click no ícone de nuvem, selecione todas e clicque em `Ok`.
+5. Algumas extensões serão instaladas automaticamente. Pode instalar outras normalmente ou obter as extensões já ativadas no seu VSCode. Para isso vá na aba de extensões, depois click no ícone de nuvem, selecione todas e clicque em `Ok`.
 
 > <picture>
 >   <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Mqxx/GitHub-Markdown/main/blockquotes/badge/light-theme/info.svg">
