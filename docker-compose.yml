@@ -3,15 +3,16 @@ version: '2'
 services:
   app:
     container_name: laravel
-    image: 'giovanegurgel/laravel_swoole'
+    image: 'giovanegurgel/stable-laravel-swoole'
     ports:
-      - '8009:8000'
+      - '8009:80'
       - '5173:5173'
     environment:
       - TZ='America/Fortaleza'
       - LARAVEL_SKIP_DATABASE=yes
     volumes:
       - './project:/app'
+      - '.devcontainer/.vscode/:/app/.vscode'
     networks:
       - netlara
 
