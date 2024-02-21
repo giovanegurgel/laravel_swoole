@@ -12,7 +12,7 @@ services:
       - LARAVEL_SKIP_DATABASE=yes
     volumes:
       - './project:/app'
-      - '.devcontainer/.vscode/:/app/.vscode'
+      - '.devcontainer/.vscode/:/tmp/.vscode'
     networks:
       - netlara
 
