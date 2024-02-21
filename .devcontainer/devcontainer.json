@@ -64,5 +64,6 @@
             }
         }
     },
-    "remoteUser": "bitnami"
+    "remoteUser": "bitnami",
+    "postStartCommand": "sudo cp -r /tmp/.vscode ."
 }
