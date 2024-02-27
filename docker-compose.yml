@@ -51,6 +51,15 @@ services:
   #     - 8010:3000
   #   volumes:
   #     - .devcontainer/dbgate:/root/.dbgate
+  #   environment:
+  #     CONNECTIONS: con1
+  #
+  #     LABEL_con1: MySQL
+  #     SERVER_con1: mysql
+  #     USER_con1: root
+  #     PASSWORD_con1: aula_mysql
+  #     PORT_con1: 3306
+  #     ENGINE_con1: mysql@dbgate-plugin-mysql  
   #   networks:
   #     - netlara
 
