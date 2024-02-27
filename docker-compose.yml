@@ -43,16 +43,14 @@ services:
   #   networks:
   #     - netlara
 
-  # phpmyadmin:
-  #   container_name: phpmyadmin
-  #   image: docker.io/bitnami/phpmyadmin:5
+  # dbgate:
+  #   image: dbgate/dbgate
+  #   container_name: dbgate
+  #   restart: unless-stopped
   #   ports:
-  #     - 8010:8080
-  #   environment:
-  #     - TZ='America/Fortaleza'
-  #     - DATABASE_HOST=mysql
-  #     - DATABASE_USER=root
-  #     - DATABASE_PASSWORD=aula_mysql
+  #     - 8010:3000
+  #   volumes:
+  #     - .devcontainer/dbgate:/root/.dbgate
   #   networks:
   #     - netlara
 
