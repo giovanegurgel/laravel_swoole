@@ -13,9 +13,9 @@
         <td align="center"><a href="https://hub.docker.com/r/giovanegurgel/laravel_swoole" target="_blank"><img  src="https://geeksterminal.com/wp-content/uploads/2019/11/docker-logo-310x162.png" width="320" alt="Docker Logo"></a></td>
         <td align="center"><img src="https://img.shields.io/docker/pulls/giovanegurgel/laravel_swoole" alt="Docker Pulls"></td>
     </tr>
-    <tr>
-        <td align="center"><a href="https://www.phpmyadmin.net/" target="_blank"><img  src="https://www.phpmyadmin.net/static/images/logo.png?067b638aa2a2" width="160" alt="PhpMyAdmin Logo"></a></td>
-        <td align="center"><img src="https://img.shields.io/github/stars/phpmyadmin" alt="GitHub Stars"></td>
+    <tr>        
+        <td align="center"><a href="https://dbgate.org/" target="_blank"><img  src="https://avatars.githubusercontent.com/u/78292618?s=200&v=4" width="120" alt="DBGate Logo"></a></td>
+        <td align="center"><img src="https://img.shields.io/github/stars/dbgate" alt="GitHub Stars"></td>
         <td align="center"><a href="https://www.mysql.com/" target="_blank"><img  src="https://vetores.org/d/mysql.svg" width="130" alt="MySQL Logo"></a></td>
         <td align="center"><img src="https://img.shields.io/github/stars/mysql" alt="GitHub Stars"></a></td>
     </tr>
@@ -30,7 +30,7 @@
 # 🌟 Visão Geral
 📦 Este repositório oferece um `Dev Container` pré-configurado para construir aplicações web com Laravel e MySQL no VSCode.
 
-🛠️ Ferramentas: Laravel, Mailpit, Swoole, MySQL, PhpMyAdmin
+🛠️ Ferramentas: Laravel, Mailpit, Swoole, MySQL, DBGate
 
 🚀 Framework Laravel: projeto Laravel gerado automaticamente.
 
@@ -58,7 +58,7 @@
 >   <img alt="Warning" src="https://raw.githubusercontent.com/Mqxx/GitHub-Markdown/main/blockquotes/badge/dark-theme/warning.svg">
 > </picture><br>
 >
-> **ATENÇÃO: Para utilizar MySQL e PHPMyAdmin, basta remover os comentários no arquivo `docker-compose.yml`**
+> **ATENÇÃO: Para utilizar MySQL e DBGate, basta remover os comentários no arquivo `docker-compose.yml`**
 
 
 # 🟢 Começando
@@ -94,7 +94,7 @@ code .
 
 🌐 Acesse seu projeto [**`Laravel ➡️ http://localhost:8009`**](http://localhost:8009) no navegador.
 
-🌐 Acesse o [**`PhpMyAdmin ➡️ http://localhost:8010`**](http://localhost:8010) no navegador.
+🌐 Acesse o [**`DBGate ➡️ http://localhost:8010`**](http://localhost:8010) no navegador.
 
 🌐 Acesse o [**`Mailpit ➡️ http://localhost:8025`**](http://localhost:8025) no navegador.
 
@@ -129,14 +129,14 @@ docker container rm NOMECONTAINER
 >   <img alt="Info" src="https://raw.githubusercontent.com/Mqxx/GitHub-Markdown/main/blockquotes/badge/dark-theme/info.svg">
 > </picture><br>
 >
-> **ATENÇÃO: O `servidor MySQL é compartilhado entre os projetos`. No entanto, como o `PHPMyAdmin` utiliza o usuário `root`, basta criar um novo banco de dados para cada projeto. Portanto, não é necessário criar uma pasta nova para o MySQL em cada projeto.**
+> **ATENÇÃO: O `servidor MySQL é compartilhado entre os projetos`. No entanto, basta configurar a conexão no `DBGate` utilizando o usuário `root` para criar um novo banco de dados em cada projeto. Portanto, não é necessário criar uma pasta nova para o MySQL em cada projeto.**
 
 > <picture>
 >   <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Mqxx/GitHub-Markdown/main/blockquotes/badge/light-theme/info.svg">
 >   <img alt="Info" src="https://raw.githubusercontent.com/Mqxx/GitHub-Markdown/main/blockquotes/badge/dark-theme/info.svg">
 > </picture><br>
 >
-> **Para `EXPORTAR` algum banco de dados, clique no título do banco de dados no menu esquerdo do `PHPMyAdmin` e depois clique em `EXPORT`. O arquivo `SQL` gerado poderá ser utilizado para `IMPORTAR` em outro computador.**
+> **Para `EXPORTAR` algum banco de dados no `DBGate`, clique com o botão direito do mouse no título do banco de dados e depois clique em `Backup/export SQL Dump`. O arquivo `SQL` gerado ficará salvo na aba `Favoritos`.**
 
 
 # 🤝 Contribuições
